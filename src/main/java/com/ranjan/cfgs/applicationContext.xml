@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 	<!-- Spring bean configuration -->
+ 	<!-- Dependent class  configuration spring bean -->
+ 	<bean id="dt" class="java.util.Date"/>  <!-- loads Data class and creates obj dt -->
+ 
+ 	<!-- Target class configuration spring bean -->
+ 	<bean id="wmg" class="java.lang.WishMessageGenerator">
+ 		<property name="date" ref="dt"/> <!-- for setter injection -->
+ 	</bean>
+ 
+ 
+ 
+ 
+ 
+ 
+ </beans>         
